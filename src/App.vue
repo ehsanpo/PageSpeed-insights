@@ -11,9 +11,9 @@ import DashboardStore from './stores/DashboardStore';
 
 export default {
   name: 'app',
-  data: function () {
+  data() {
     return {
-      dashboardStore: DashboardStore.data
+      dashboardStore: DashboardStore.data,
     };
   },
   components: {
@@ -21,9 +21,9 @@ export default {
     Preloader,
   },
   methods: {
-    hasData: function() {
+    hasData() {
       return this.dashboardStore.urls !== null;
-    }
+    },
   },
   created() {
     axios

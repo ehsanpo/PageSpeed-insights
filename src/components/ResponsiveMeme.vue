@@ -16,24 +16,24 @@ import CloseIcon from './CloseIcon.vue';
 export default {
   name: 'ResponsiveMeme',
   mixins: [cookieMixin],
-  data: function () {
+  data() {
     return {
-      isVisible: false
-    }
+      isVisible: false,
+    };
   },
   components: {
-    CloseIcon
+    CloseIcon,
   },
   methods: {
     removeMeme() {
       this.isVisible = false;
 
-      this.$setCookie("hide-meme", true, 365);
+      this.$setCookie('hide-meme', true, 365);
     },
   },
   created() {
-    this.isVisible = !this.$getCookie("hide-meme");
-  }
+    this.isVisible = !this.$getCookie('hide-meme');
+  },
 };
 </script>
 
@@ -46,8 +46,6 @@ export default {
     &__img {
       width: 100%;
       height: 100%;
-
-      background: url("../assets/meme.jpg");
       background-size: contain;
       background-repeat: no-repeat;
     }

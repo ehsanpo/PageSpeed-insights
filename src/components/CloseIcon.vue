@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'CloseIcon'
+  name: 'CloseIcon',
 };
 </script>
 
@@ -21,4 +21,3 @@ export default {
     }
   }
 </style>
-

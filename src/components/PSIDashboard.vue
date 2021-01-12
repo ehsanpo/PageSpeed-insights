@@ -36,8 +36,8 @@ export default {
     MetricCharts,
     UrlsTable,
     ResponsiveMeme,
-    Footer
-  }
+    Footer,
+  },
 };
 </script>
 

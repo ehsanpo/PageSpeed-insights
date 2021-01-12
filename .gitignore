@@ -31,3 +31,4 @@ data.json
 package-lock.json
 Gemfile.lock
 .env
+dist
