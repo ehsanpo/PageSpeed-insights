@@ -30,3 +30,4 @@ yarn-error.log*
 data.json
 package-lock.json
 Gemfile.lock
+.env

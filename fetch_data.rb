@@ -4,7 +4,9 @@ require "pp"
 require "json"
 require "byebug"
 require "json"
+require 'dotenv'
 
+Dotenv.load
 BASE_URL = "https://www.googleapis.com/pagespeedonline/v5/runPagespeed"
 DATA_FILE = "public/data/data.json"
 PSI_DEVICE_TYPES = %w(mobile desktop)
@@ -32,7 +34,7 @@ def fetch(device_type, url)
     strategy: device_type,
     category: "performance",
     locale: "en",
-    key: "AIzaSyALPBMYYCX69Joa9Q3vIOounUSKq7sagXo"
+    key: ENV['GOOGLEAPI']
   }
 
   uri = URI.parse(BASE_URL)
